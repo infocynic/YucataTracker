@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>NUnitLib</id>
+    <version>2.5.10.11092</version>
+    <title>NUnitLib</title>
+    <authors>Simon Cropp</authors>
+    <owners>Simon Cropp</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NUnit is a unit-testing framework for all .Net languages. http://www.nunit.org/
+This is a cut down copy of the nunit package. It contains only nunit.framework.dll.</description>
+    <summary>NUnit is a unit-testing framework for all .Net languages.</summary>
+    <tags>nunit NUnitLib</tags>
+    <references>
+      <reference file="nunit.framework.dll" />
+    </references>
+  </metadata>
+</package>

@@ -1,0 +1,11 @@
+﻿<Configuration>
+  <SnapshotDialog>
+    <InitialDirectory>C:\Workspace\Sharp-Architecture-Template\Solutions</InitialDirectory>
+  </SnapshotDialog>
+  <CoverageFilters>
+    <IncludeFilters>
+      <Filter ModuleMask="*" ClassMask="*" FunctionMask="*" />
+    </IncludeFilters>
+    <ExcludeFilters />
+  </CoverageFilters>
+</Configuration>

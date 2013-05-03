@@ -1,0 +1,13 @@
+C:\code\YucataTracker\Solutions\YucataTracker.Domain\bin\Debug\YucataTracker.Domain.dll
+C:\code\YucataTracker\Solutions\YucataTracker.Domain\bin\Debug\YucataTracker.Domain.pdb
+C:\code\YucataTracker\Solutions\YucataTracker.Domain\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\code\YucataTracker\Solutions\YucataTracker.Domain\bin\Debug\Newtonsoft.Json.dll
+C:\code\YucataTracker\Solutions\YucataTracker.Domain\bin\Debug\SharpArch.Domain.dll
+C:\code\YucataTracker\Solutions\YucataTracker.Domain\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\code\YucataTracker\Solutions\YucataTracker.Domain\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\code\YucataTracker\Solutions\YucataTracker.Domain\bin\Debug\Newtonsoft.Json.pdb
+C:\code\YucataTracker\Solutions\YucataTracker.Domain\bin\Debug\Newtonsoft.Json.xml
+C:\code\YucataTracker\Solutions\YucataTracker.Domain\bin\Debug\SharpArch.Domain.pdb
+C:\code\YucataTracker\Solutions\YucataTracker.Domain\obj\Debug\YucataTracker.Domain.csprojResolveAssemblyReference.cache
+C:\code\YucataTracker\Solutions\YucataTracker.Domain\obj\Debug\YucataTracker.Domain.dll
+C:\code\YucataTracker\Solutions\YucataTracker.Domain\obj\Debug\YucataTracker.Domain.pdb

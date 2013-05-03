@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>MagicalUnicornMvcErrorToolkit</id>
+    <version>1.0</version>
+    <title>Magical Unicorn Mvc Error Toolkit</title>
+    <authors>Pure Krome</authors>
+    <owners>Pure Krome</owners>
+    <iconUrl>http://i.imgur.com/bR4Yf.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Would you like your ASP.NET MVC web application to handle both 404 Not Found errors and 500 Server Errors (and everything in between?).
+
+Hells yeah, you do! I do! Unicorns do!
+
+So this little nuget package is for you -&gt; it's sets up some settings in your web.config &amp; global.asax. It adds a controller with the appropriate views and off you go :)
+
+Or you can do it manually yourself: http://stackoverflow.com/questions/619895/how-can-i-properly-handle-404-in-asp-net-mvc/7499406#7499406
+
+Shout out to David Fowler for the suggestion, while in SignalR. :)</description>
+    <summary>Wire up 404 Not Found errors and 500 Server Errors (and any other Http errors) for an ASP.NET MVC web application.</summary>
+    <copyright>2011</copyright>
+    <tags>asp.net-mvc magical-unicorn error-handling 404-not-found 500-server-error</tags>
+    <dependencies>
+      <dependency id="WebActivator" version="1.4" />
+    </dependencies>
+    <references />
+  </metadata>
+</package>
