@@ -111,14 +111,14 @@ namespace YucataTracker.Web.Mvc.Controllers
 		}
 
 		[HttpGet, ImportModelStateFromTempData]
-		public ActionResult MatchDetail(int MatchId)
+		public ActionResult MatchDetail(int MatchId, string BggID)
 		{
 			Match m = RecordTasks.GetMatchById(MatchId);
 			if (null == m) return new HttpNotFoundResult("No match found by ID");
 				//the only way you're getting here with a bogus ID is url hacking, so I'm not obliged to help you navigate back here
 
 
-			return View(RecordTasks.PrepareMatchDetailViewModel(m));
+			return View(RecordTasks.PrepareMatchDetailViewModel(m, BggID));
 
 		}
 
@@ -129,7 +129,7 @@ namespace YucataTracker.Web.Mvc.Controllers
 			{
 				RecordTasks.UpdateMatchDetails(vm);
 			}
-			return this.RedirectToAction(rc => rc.MatchDetail(vm.MatchId));
+			return this.RedirectToAction(rc => rc.MatchDetail(vm.MatchId, vm.BggId));
 		}
 		
 	}

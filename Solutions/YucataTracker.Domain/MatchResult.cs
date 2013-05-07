@@ -16,7 +16,7 @@ namespace YucataTracker.Domain
 			Check.Require(null != p);
 			this.Match = m;
 			this.Player = p;
-			p.MatchResults.Add(this);
+			p.AddMatchResult(this);
 		}
 
 

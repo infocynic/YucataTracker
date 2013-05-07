@@ -43,3 +43,15 @@ C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\Microsoft.Web.Infrastr
 C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\WebActivator.dll
 C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\YucataTracker.ViewModels.dll
 C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\YucataTracker.ViewModels.pdb
+C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\System.Web.Helpers.dll
+C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\System.Web.Mvc.dll
+C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\System.Web.Razor.dll
+C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\System.Web.WebPages.Deployment.dll
+C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\System.Web.WebPages.dll
+C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\System.Web.WebPages.Razor.dll
+C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\System.Web.Helpers.xml
+C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\System.Web.Mvc.xml
+C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\System.Web.Razor.xml
+C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\System.Web.WebPages.xml
+C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\System.Web.WebPages.Deployment.xml
+C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\System.Web.WebPages.Razor.xml

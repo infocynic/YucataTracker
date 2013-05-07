@@ -110,8 +110,6 @@
     <Compile Include="..\..\Common\CommonAssemblyInfo.cs">
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="Attributes\IndexedAttribute.cs" />
-    <Compile Include="Attributes\UniqueAttribute.cs" />
     <Compile Include="NHibernateMaps\Conventions\ColumnIndexedConvention.cs" />
     <Compile Include="NHibernateMaps\Conventions\ColumnLengthConvention.cs" />
     <Compile Include="NHibernateMaps\Conventions\ColumnNullConvention.cs" />

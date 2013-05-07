@@ -1,6 +1,6 @@
 ﻿using System;
 using FluentNHibernate.Conventions;
-using YucataTracker.Infrastructure.Attributes;
+using YucataTracker.Domain.Attributes;
 using FNH = FluentNHibernate;
 
 namespace YucataTracker.Infrastructure.Conventions

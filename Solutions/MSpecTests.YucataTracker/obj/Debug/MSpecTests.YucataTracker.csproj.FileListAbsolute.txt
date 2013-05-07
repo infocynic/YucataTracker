@@ -22,3 +22,5 @@ C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\obj\Debug\MSpecTests.Yu
 C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\obj\Debug\MSpecTests.YucataTracker.pdb
 C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\Iesi.Collections.dll
 C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\Iesi.Collections.xml
+C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\YucataTracker.ViewModels.dll
+C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\YucataTracker.ViewModels.pdb

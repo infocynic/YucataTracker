@@ -93,10 +93,13 @@
     <Compile Include="..\..\Common\CommonAssemblyInfo.cs">
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="Attributes\IndexedAttribute.cs" />
+    <Compile Include="Attributes\UniqueAttribute.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Match.cs" />
     <Compile Include="MatchResult.cs" />
+    <Compile Include="MatchStatus.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="SortDirection.cs" />
   </ItemGroup>

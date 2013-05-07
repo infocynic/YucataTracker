@@ -1,7 +1,7 @@
 ﻿using System;
 using FluentNHibernate.Conventions;
 using FluentNHibernate.Conventions.Instances;
-using YucataTracker.Infrastructure.Attributes;
+using YucataTracker.Domain.Attributes;
 
 namespace YucataTracker.Infrastructure.Conventions
 {
