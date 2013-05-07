@@ -39,3 +39,7 @@ C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\SharpArch.Web.Mvc.pdb
 C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\obj\Debug\YucataTracker.Web.Mvc.csprojResolveAssemblyReference.cache
 C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\obj\Debug\YucataTracker.Web.Mvc.dll
 C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\obj\Debug\YucataTracker.Web.Mvc.pdb
+C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\Microsoft.Web.Infrastructure.dll
+C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\WebActivator.dll
+C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\YucataTracker.ViewModels.dll
+C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\YucataTracker.ViewModels.pdb

@@ -6,8 +6,6 @@ C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\Machine.Speci
 C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\Microsoft.Practices.ServiceLocation.dll
 C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\Newtonsoft.Json.dll
 C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\nunit.framework.dll
-C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\nunit.mocks.dll
-C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\pnunit.framework.dll
 C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\SharpArch.Domain.dll
 C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\YucataTracker.Domain.dll
 C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\YucataTracker.Tasks.dll
@@ -22,3 +20,5 @@ C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\SharpArch.Dom
 C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\obj\Debug\MSpecTests.YucataTracker.csprojResolveAssemblyReference.cache
 C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\obj\Debug\MSpecTests.YucataTracker.dll
 C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\obj\Debug\MSpecTests.YucataTracker.pdb
+C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\Iesi.Collections.dll
+C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\Iesi.Collections.xml

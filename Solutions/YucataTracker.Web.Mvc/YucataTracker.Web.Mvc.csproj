@@ -164,8 +164,12 @@
     <Compile Include="..\..\Common\CommonAssemblyInfo.cs">
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="App_Start\MagicalUnicornCustomErrorHandling.cs" />
     <Compile Include="CastleWindsor\ComponentRegistrar.cs" />
+    <Compile Include="Controllers\ActionFilters\ModelStateTempData.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
+    <Compile Include="Controllers\Helpers.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RecordController.cs" />
     <Compile Include="Controllers\RouteRegistrar.cs" />
@@ -174,6 +178,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\Error\NotFound.jpg" />
+    <Content Include="Content\Images\Error\ServerError.jpg" />
     <Content Include="Content\img\sharp_arch.jpg" />
     <Content Include="Content\img\sharp_arch_small.gif" />
     <Content Include="Content\Site.css" />
@@ -196,6 +202,8 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Scripts\jquery-2.0.0.min.map" />
+    <Content Include="Views\Error\ServerError.cshtml" />
+    <Content Include="Views\Error\NotFound.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\YucataTracker.Domain\YucataTracker.Domain.csproj">
@@ -209,6 +217,10 @@
     <ProjectReference Include="..\YucataTracker.Tasks\YucataTracker.Tasks.csproj">
       <Project>{C9AAC14B-E695-4508-83B7-ACB8FC5A7284}</Project>
       <Name>YucataTracker.Tasks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YucataTracker.ViewModels\YucataTracker.ViewModels\YucataTracker.ViewModels.csproj">
+      <Project>{57107639-70A0-4790-84CC-241BDB0AF5B6}</Project>
+      <Name>YucataTracker.ViewModels</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

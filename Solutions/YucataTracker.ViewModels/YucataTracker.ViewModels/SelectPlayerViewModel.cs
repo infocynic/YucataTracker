@@ -10,10 +10,10 @@ namespace YucataTracker.ViewModels
 	public class SelectPlayerViewModel
 	{
 
+		public SelectPlayerViewModel() { }
 
 		public SelectPlayerViewModel(Game g, string BggID)
 		{
-			// TODO: Complete member initialization
 			this.GameName = g.Name;
 			this.GameId = g.Id;
 			this.BggID = BggID;

@@ -43,3 +43,12 @@ C:\code\YucataTracker\Solutions\YucataTracker.Tests\bin\Debug\log4net.xml
 C:\code\YucataTracker\Solutions\YucataTracker.Tests\obj\Debug\YucataTracker.Tests.csprojResolveAssemblyReference.cache
 C:\code\YucataTracker\Solutions\YucataTracker.Tests\obj\Debug\YucataTracker.Tests.dll
 C:\code\YucataTracker\Solutions\YucataTracker.Tests\obj\Debug\YucataTracker.Tests.pdb
+C:\code\YucataTracker\Solutions\YucataTracker.Tests\bin\Debug\x64\SQLite.Interop.dll
+C:\code\YucataTracker\Solutions\YucataTracker.Tests\bin\Debug\x86\SQLite.Interop.dll
+C:\code\YucataTracker\Solutions\YucataTracker.Tests\bin\Debug\YucataTracker.Tasks.dll
+C:\code\YucataTracker\Solutions\YucataTracker.Tests\bin\Debug\YucataTracker.ViewModels.dll
+C:\code\YucataTracker\Solutions\YucataTracker.Tests\bin\Debug\WebActivator.dll
+C:\code\YucataTracker\Solutions\YucataTracker.Tests\bin\Debug\Microsoft.Web.Mvc.dll
+C:\code\YucataTracker\Solutions\YucataTracker.Tests\bin\Debug\nunit.framework.xml
+C:\code\YucataTracker\Solutions\YucataTracker.Tests\bin\Debug\YucataTracker.Tasks.pdb
+C:\code\YucataTracker\Solutions\YucataTracker.Tests\bin\Debug\YucataTracker.ViewModels.pdb

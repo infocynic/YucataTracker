@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YucataTracker.Web.Mvc", "Yu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YucataTracker.Tests", "YucataTracker.Tests\YucataTracker.Tests.csproj", "{CC4A233E-BE8A-47CC-A87C-8352BFD557B7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ViewModels", "ViewModels", "{ACA9BB3E-1E88-458A-B3AA-727D2A6F1F7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YucataTracker.ViewModels", "YucataTracker.ViewModels\YucataTracker.ViewModels\YucataTracker.ViewModels.csproj", "{57107639-70A0-4790-84CC-241BDB0AF5B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +63,10 @@ Global
 		{CC4A233E-BE8A-47CC-A87C-8352BFD557B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC4A233E-BE8A-47CC-A87C-8352BFD557B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC4A233E-BE8A-47CC-A87C-8352BFD557B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57107639-70A0-4790-84CC-241BDB0AF5B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57107639-70A0-4790-84CC-241BDB0AF5B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57107639-70A0-4790-84CC-241BDB0AF5B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57107639-70A0-4790-84CC-241BDB0AF5B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,5 +78,6 @@ Global
 		{39613BA0-1206-4A4B-A16A-C1F2A22D1267} = {D5E689AA-BE7E-4F5F-AF51-03F71C6C31B2}
 		{F63E0957-B60B-47A3-96BB-76DC243D0C8A} = {2322D330-1A60-4F79-B553-53DED803A098}
 		{CC4A233E-BE8A-47CC-A87C-8352BFD557B7} = {2322D330-1A60-4F79-B553-53DED803A098}
+		{57107639-70A0-4790-84CC-241BDB0AF5B6} = {ACA9BB3E-1E88-458A-B3AA-727D2A6F1F7B}
 	EndGlobalSection
 EndGlobal

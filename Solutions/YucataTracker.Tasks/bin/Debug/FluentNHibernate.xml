@@ -59,99 +59,11 @@
             A source for Type instances, acts as a facade for an Assembly or as an alternative Type provider.
             </summary>
         </member>
-        <member name="M:FluentNHibernate.Mapping.CompositeIdentityPart`1.KeyProperty(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">
+        <member name="M:FluentNHibernate.Mapping.ClasslikeMapBase`1.OnMemberMapped(FluentNHibernate.Member)">
             <summary>
-            Defines a property to be used as a key for this composite-id.
+            Called when a member is mapped by a builder method.
             </summary>
-            <param name="expression">A member access lambda expression for the property</param>
-            <returns>The composite identity part fluent interface</returns>
-        </member>
-        <member name="M:FluentNHibernate.Mapping.CompositeIdentityPart`1.KeyProperty(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String)">
-            <summary>
-            Defines a property to be used as a key for this composite-id with an explicit column name.
-            </summary>
-            <param name="expression">A member access lambda expression for the property</param>
-            <param name="columnName">The column name in the database to use for this key, or null to use the property name</param>
-            <returns>The composite identity part fluent interface</returns>
-        </member>
-        <member name="M:FluentNHibernate.Mapping.CompositeIdentityPart`1.KeyProperty(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Action{FluentNHibernate.Mapping.KeyPropertyPart})">
-            <summary>
-            Defines a property to be used as a key for this composite-id with an explicit column name.
-            </summary>
-            <param name="expression">A member access lambda expression for the property</param>        
-            <param name="keyPropertyAction">Additional settings for the key property</param>
-            <returns>The composite identity part fluent interface</returns>
-        </member>
-        <member name="M:FluentNHibernate.Mapping.CompositeIdentityPart`1.KeyReference(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">
-            <summary>
-            Defines a reference to be used as a many-to-one key for this composite-id with an explicit column name.
-            </summary>
-            <param name="expression">A member access lambda expression for the property</param>
-            <returns>The composite identity part fluent interface</returns>
-        </member>
-        <member name="M:FluentNHibernate.Mapping.CompositeIdentityPart`1.KeyReference(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String[])">
-            <summary>
-            Defines a reference to be used as a many-to-one key for this composite-id with an explicit column name.
-            </summary>
-            <param name="expression">A member access lambda expression for the property</param>
-            <param name="columnNames">A list of column names used for this key</param>
-            <returns>The composite identity part fluent interface</returns>
-        </member>
-        <member name="M:FluentNHibernate.Mapping.CompositeIdentityPart`1.KeyReference(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Action{FluentNHibernate.Mapping.KeyManyToOnePart},System.String[])">
-            <summary>
-            Defines a reference to be used as a many-to-one key for this composite-id with an explicit column name.
-            </summary>
-            <param name="expression">A member access lambda expression for the property</param>
-            <param name="customMapping">A lambda expression specifying additional settings for the key reference</param>
-            <param name="columnNames">A list of column names used for this key</param>
-            <returns>The composite identity part fluent interface</returns>
-        </member>
-        <member name="M:FluentNHibernate.Mapping.CompositeIdentityPart`1.Mapped">
-            <summary>
-            Specifies that this composite id is "mapped"; aka, a composite id where
-            the properties exist in the identity class as well as in the entity itself
-            </summary>
-        </member>
-        <member name="M:FluentNHibernate.Mapping.CompositeIdentityPart`1.UnsavedValue(System.String)">
-            <summary>
-            Specifies the unsaved value for the identity
-            </summary>
-            <param name="value">Unsaved value</param>
-        </member>
-        <member name="M:FluentNHibernate.Mapping.CompositeIdentityPart`1.ComponentCompositeIdentifier``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">
-             <summary>
-             You may use a component as an identifier of an entity class. Your component class must
-             satisfy certain requirements:
-            
-               * It must be Serializable.
-               * It must re-implement Equals() and GetHashCode(), consistently with the database's
-                 notion of composite key equality. 
-             
-             You can't use an IIdentifierGenerator to generate composite keys. Instead the application
-             must assign its own identifiers. Since a composite identifier must be assigned to the object
-             before saving it, we can't use unsaved-value of the identifier to distinguish between newly
-             instantiated instances and instances saved in a previous session. You may instead implement
-             IInterceptor.IsUnsaved() if you wish to use SaveOrUpdate() or cascading save / update. As an
-             alternative, you may also set the unsaved-value attribute on a version or timestamp to specify
-             a value that indicates a new transient instance. In this case, the version of the entity is
-             used instead of the (assigned) identifier and you don't have to implement
-             IInterceptor.IsUnsaved() yourself. 
-             </summary>
-             <param name="expression">The property of component type that holds the composite identifier.</param>        
-             <remarks>
-             Your persistent class must override Equals() and GetHashCode() to implement composite identifier
-             equality. It must also be Serializable.
-             </remarks>
-        </member>
-        <member name="P:FluentNHibernate.Mapping.CompositeIdentityPart`1.Access">
-            <summary>
-            Set the access and naming strategy for this identity.
-            </summary>
-        </member>
-        <member name="P:FluentNHibernate.Mapping.CompositeIdentityPart`1.Not">
-            <summary>
-            Invert the next boolean operation
-            </summary>
+            <param name="member">Member being mapped.</param>
         </member>
         <member name="M:FluentNHibernate.Mapping.ClasslikeMapBase`1.Map(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">
             <summary>
@@ -4688,6 +4600,100 @@
                 });
               });
             </example>
+        </member>
+        <member name="M:FluentNHibernate.Mapping.CompositeIdentityPart`1.KeyProperty(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">
+            <summary>
+            Defines a property to be used as a key for this composite-id.
+            </summary>
+            <param name="expression">A member access lambda expression for the property</param>
+            <returns>The composite identity part fluent interface</returns>
+        </member>
+        <member name="M:FluentNHibernate.Mapping.CompositeIdentityPart`1.KeyProperty(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String)">
+            <summary>
+            Defines a property to be used as a key for this composite-id with an explicit column name.
+            </summary>
+            <param name="expression">A member access lambda expression for the property</param>
+            <param name="columnName">The column name in the database to use for this key, or null to use the property name</param>
+            <returns>The composite identity part fluent interface</returns>
+        </member>
+        <member name="M:FluentNHibernate.Mapping.CompositeIdentityPart`1.KeyProperty(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Action{FluentNHibernate.Mapping.KeyPropertyPart})">
+            <summary>
+            Defines a property to be used as a key for this composite-id with an explicit column name.
+            </summary>
+            <param name="expression">A member access lambda expression for the property</param>        
+            <param name="keyPropertyAction">Additional settings for the key property</param>
+            <returns>The composite identity part fluent interface</returns>
+        </member>
+        <member name="M:FluentNHibernate.Mapping.CompositeIdentityPart`1.KeyReference(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">
+            <summary>
+            Defines a reference to be used as a many-to-one key for this composite-id with an explicit column name.
+            </summary>
+            <param name="expression">A member access lambda expression for the property</param>
+            <returns>The composite identity part fluent interface</returns>
+        </member>
+        <member name="M:FluentNHibernate.Mapping.CompositeIdentityPart`1.KeyReference(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String[])">
+            <summary>
+            Defines a reference to be used as a many-to-one key for this composite-id with an explicit column name.
+            </summary>
+            <param name="expression">A member access lambda expression for the property</param>
+            <param name="columnNames">A list of column names used for this key</param>
+            <returns>The composite identity part fluent interface</returns>
+        </member>
+        <member name="M:FluentNHibernate.Mapping.CompositeIdentityPart`1.KeyReference(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Action{FluentNHibernate.Mapping.KeyManyToOnePart},System.String[])">
+            <summary>
+            Defines a reference to be used as a many-to-one key for this composite-id with an explicit column name.
+            </summary>
+            <param name="expression">A member access lambda expression for the property</param>
+            <param name="customMapping">A lambda expression specifying additional settings for the key reference</param>
+            <param name="columnNames">A list of column names used for this key</param>
+            <returns>The composite identity part fluent interface</returns>
+        </member>
+        <member name="M:FluentNHibernate.Mapping.CompositeIdentityPart`1.Mapped">
+            <summary>
+            Specifies that this composite id is "mapped"; aka, a composite id where
+            the properties exist in the identity class as well as in the entity itself
+            </summary>
+        </member>
+        <member name="M:FluentNHibernate.Mapping.CompositeIdentityPart`1.UnsavedValue(System.String)">
+            <summary>
+            Specifies the unsaved value for the identity
+            </summary>
+            <param name="value">Unsaved value</param>
+        </member>
+        <member name="M:FluentNHibernate.Mapping.CompositeIdentityPart`1.ComponentCompositeIdentifier``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">
+             <summary>
+             You may use a component as an identifier of an entity class. Your component class must
+             satisfy certain requirements:
+            
+               * It must be Serializable.
+               * It must re-implement Equals() and GetHashCode(), consistently with the database's
+                 notion of composite key equality. 
+             
+             You can't use an IIdentifierGenerator to generate composite keys. Instead the application
+             must assign its own identifiers. Since a composite identifier must be assigned to the object
+             before saving it, we can't use unsaved-value of the identifier to distinguish between newly
+             instantiated instances and instances saved in a previous session. You may instead implement
+             IInterceptor.IsUnsaved() if you wish to use SaveOrUpdate() or cascading save / update. As an
+             alternative, you may also set the unsaved-value attribute on a version or timestamp to specify
+             a value that indicates a new transient instance. In this case, the version of the entity is
+             used instead of the (assigned) identifier and you don't have to implement
+             IInterceptor.IsUnsaved() yourself. 
+             </summary>
+             <param name="expression">The property of component type that holds the composite identifier.</param>        
+             <remarks>
+             Your persistent class must override Equals() and GetHashCode() to implement composite identifier
+             equality. It must also be Serializable.
+             </remarks>
+        </member>
+        <member name="P:FluentNHibernate.Mapping.CompositeIdentityPart`1.Access">
+            <summary>
+            Set the access and naming strategy for this identity.
+            </summary>
+        </member>
+        <member name="P:FluentNHibernate.Mapping.CompositeIdentityPart`1.Not">
+            <summary>
+            Invert the next boolean operation
+            </summary>
         </member>
         <member name="M:FluentNHibernate.Mapping.IdentityGenerationStrategyBuilder`1.Increment">
             <summary>

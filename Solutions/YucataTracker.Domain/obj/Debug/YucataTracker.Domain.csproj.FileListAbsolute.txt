@@ -11,3 +11,5 @@ C:\code\YucataTracker\Solutions\YucataTracker.Domain\bin\Debug\SharpArch.Domain.
 C:\code\YucataTracker\Solutions\YucataTracker.Domain\obj\Debug\YucataTracker.Domain.csprojResolveAssemblyReference.cache
 C:\code\YucataTracker\Solutions\YucataTracker.Domain\obj\Debug\YucataTracker.Domain.dll
 C:\code\YucataTracker\Solutions\YucataTracker.Domain\obj\Debug\YucataTracker.Domain.pdb
+C:\code\YucataTracker\Solutions\YucataTracker.Domain\bin\Debug\Iesi.Collections.dll
+C:\code\YucataTracker\Solutions\YucataTracker.Domain\bin\Debug\Iesi.Collections.xml

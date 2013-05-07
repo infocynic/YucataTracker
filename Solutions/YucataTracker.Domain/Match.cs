@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
+using SharpArch.Domain;
 using SharpArch.Domain.DomainModel;
 
 namespace YucataTracker.Domain
@@ -11,8 +13,8 @@ namespace YucataTracker.Domain
 
 		protected Match()
 		{
-			this._players = new HashSet<Player>();
-			this._matchResults = new HashSet<MatchResult>();
+			this._players = new SortedSet<Player>();
+			this._matchResults = new SortedSet<MatchResult>();
 		}
 
 		public Match(Game g)
@@ -25,15 +27,59 @@ namespace YucataTracker.Domain
 		private ISet<MatchResult> _matchResults;
 
 
-		public virtual int YucataID { get; set; }
+		public virtual int? YucataID { get; set; }
+		
+		[Required]
 		public virtual Game Game { get; private set; }
-		public virtual ISet<Player> Players { get { return _players; } }
 
-		public virtual ISet<MatchResult> MatchResults { get { return _matchResults; } }
+		public virtual IEnumerable<Player> Players { get { return _players; } }
+
+		public virtual IEnumerable<MatchResult> MatchResults { get { return _matchResults; } }
+
+		[Required]
+		public virtual MatchStatus MatchStatus { get; set; }
+
+
+		public virtual bool AddPlayer(Player p)
+		{
+			Check.Require(null != p);
+
+			
+
+			//look for a MatchResult with this player.
+			MatchResult existing = _matchResults.FirstOrDefault(mr => mr.Player == p);
+			if (null != existing) return false; //already exists on this match
+
+			//too many players?
+			if (_players.Count == Game.NumberOfPlayers || _players.Contains(p)) return false;
+			
+			
+			_players.Add(p);
+			_matchResults.Add(new MatchResult(this, p));
+			
+		
+			
+			return true;
+		}
+
+		public virtual bool DeletePlayer(Player p)
+		{
+			Check.Require(null != p);
+			_players.Remove(p);
+			MatchResult old = _matchResults.FirstOrDefault(mr => mr.Player == p);
+			if (old != null) {
+				_matchResults.Remove(old);
+				p.DeleteMatchResult(old);
+				return true;
+			}
+			return false;
+		}
+
+		//Note; there is no AddMatchResult and DeleteMatchResult. These are encapsulated by Adding and Removing a Player.
 
 		public virtual bool UpdateMatchResults()
 		{
-			if (MatchResults.Count != Players.Count) return false;
+			if (_matchResults.Count != _players.Count) return false;
 
 			double MaxScore = MatchResults.Max(mr => mr.PrimaryScore);
 			int NumTiedPlayers = MatchResults.Count(mr => mr.PrimaryScore == MaxScore);
@@ -61,6 +107,7 @@ namespace YucataTracker.Domain
 				 
 				if (mr.PrimaryScore != prev.PrimaryScore || mr.TiebreakerScore != prev.TiebreakerScore || mr.SecondaryTiebreakerScore != prev.SecondaryTiebreakerScore)
 				{
+					//if any score is different, this is not a tie, so set rank = current item count
 					rank = itemCount;
 				}
 				mr.Rank = rank;
@@ -87,12 +134,12 @@ namespace YucataTracker.Domain
 				int numPlayersWithThisRank = PlayersWithThisRank.Count;
 
 				if (numPlayersWithThisRank == 1) {
-					PlayersWithThisRank[0].TournamentPoints = Players.Count + 1 - Rank; 
+					PlayersWithThisRank[0].TournamentPoints = _players.Count + 1 - Rank; 
 					continue; 
 				}
 				
 
-				double sequenceSum = 0.5 * numPlayersWithThisRank * (2 * (Players.Count + 1 - Rank) + (numPlayersWithThisRank - 1) * 1);
+				double sequenceSum = 0.5 * numPlayersWithThisRank * (2 * (_players.Count + 1 - Rank) + (numPlayersWithThisRank - 1) * 1);
 				double earnedPoints = sequenceSum / numPlayersWithThisRank;
 				foreach (MatchResult mr in PlayersWithThisRank)
 				{

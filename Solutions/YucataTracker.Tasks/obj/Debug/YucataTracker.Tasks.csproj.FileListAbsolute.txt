@@ -22,3 +22,5 @@ C:\code\YucataTracker\Solutions\YucataTracker.Tasks\bin\Debug\Iesi.Collections.x
 C:\code\YucataTracker\Solutions\YucataTracker.Tasks\obj\Debug\YucataTracker.Tasks.csprojResolveAssemblyReference.cache
 C:\code\YucataTracker\Solutions\YucataTracker.Tasks\obj\Debug\YucataTracker.Tasks.dll
 C:\code\YucataTracker\Solutions\YucataTracker.Tasks\obj\Debug\YucataTracker.Tasks.pdb
+C:\code\YucataTracker\Solutions\YucataTracker.Tasks\bin\Debug\NHibernate.dll
+C:\code\YucataTracker\Solutions\YucataTracker.Tasks\bin\Debug\NHibernate.xml
