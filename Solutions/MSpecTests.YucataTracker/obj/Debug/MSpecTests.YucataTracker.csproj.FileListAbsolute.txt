@@ -13,7 +13,6 @@ C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\YucataTracker
 C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\YucataTracker.Tasks.pdb
 C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\Microsoft.Practices.ServiceLocation.xml
-C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\Newtonsoft.Json.pdb
 C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\Newtonsoft.Json.xml
 C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\nunit.framework.xml
 C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\SharpArch.Domain.pdb
@@ -24,3 +23,7 @@ C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\Iesi.Collecti
 C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\Iesi.Collections.xml
 C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\YucataTracker.ViewModels.dll
 C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\YucataTracker.ViewModels.pdb
+C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\NHibernate.dll
+C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\SharpArch.NHibernate.dll
+C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\NHibernate.xml
+C:\code\YucataTracker\Solutions\MSpecTests.YucataTracker\bin\Debug\SharpArch.NHibernate.pdb

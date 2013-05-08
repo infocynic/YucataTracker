@@ -32,7 +32,6 @@ C:\code\YucataTracker\Solutions\YucataTracker.Tests\bin\Debug\FluentNHibernate.x
 C:\code\YucataTracker\Solutions\YucataTracker.Tests\bin\Debug\Iesi.Collections.xml
 C:\code\YucataTracker\Solutions\YucataTracker.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\code\YucataTracker\Solutions\YucataTracker.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
-C:\code\YucataTracker\Solutions\YucataTracker.Tests\bin\Debug\Newtonsoft.Json.pdb
 C:\code\YucataTracker\Solutions\YucataTracker.Tests\bin\Debug\Newtonsoft.Json.xml
 C:\code\YucataTracker\Solutions\YucataTracker.Tests\bin\Debug\NHibernate.xml
 C:\code\YucataTracker\Solutions\YucataTracker.Tests\bin\Debug\SharpArch.Domain.pdb

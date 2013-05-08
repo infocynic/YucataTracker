@@ -14,7 +14,6 @@ C:\code\YucataTracker\Solutions\YucataTracker.Infrastructure\bin\Debug\FluentNHi
 C:\code\YucataTracker\Solutions\YucataTracker.Infrastructure\bin\Debug\Iesi.Collections.xml
 C:\code\YucataTracker\Solutions\YucataTracker.Infrastructure\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\code\YucataTracker\Solutions\YucataTracker.Infrastructure\bin\Debug\Microsoft.Practices.ServiceLocation.xml
-C:\code\YucataTracker\Solutions\YucataTracker.Infrastructure\bin\Debug\Newtonsoft.Json.pdb
 C:\code\YucataTracker\Solutions\YucataTracker.Infrastructure\bin\Debug\Newtonsoft.Json.xml
 C:\code\YucataTracker\Solutions\YucataTracker.Infrastructure\bin\Debug\NHibernate.xml
 C:\code\YucataTracker\Solutions\YucataTracker.Infrastructure\bin\Debug\SharpArch.Domain.pdb
@@ -22,3 +21,4 @@ C:\code\YucataTracker\Solutions\YucataTracker.Infrastructure\bin\Debug\SharpArch
 C:\code\YucataTracker\Solutions\YucataTracker.Infrastructure\obj\Debug\YucataTracker.Infrastructure.csprojResolveAssemblyReference.cache
 C:\code\YucataTracker\Solutions\YucataTracker.Infrastructure\obj\Debug\YucataTracker.Infrastructure.dll
 C:\code\YucataTracker\Solutions\YucataTracker.Infrastructure\obj\Debug\YucataTracker.Infrastructure.pdb
+C:\code\YucataTracker\Solutions\YucataTracker.Infrastructure\bin\Debug\YucataTracker.Infrastructure.dll.config

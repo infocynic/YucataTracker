@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Microsoft.Web.Mvc;
 using YucataTracker.Domain;
 using YucataTracker.Tasks;
-using Microsoft.Web.Mvc;
+using YucataTracker.Tasks.Queries;
 using YucataTracker.ViewModels;
 using YucataTracker.Web.Mvc.Controllers.ActionFilters;
 
@@ -14,10 +14,19 @@ namespace YucataTracker.Web.Mvc.Controllers
 	public class RecordController : BaseController
 	{
 		private IRecordTasks RecordTasks;
+		private IGetAllGamesQuery AllGamesQuery;
+		private IGetGameByIDQuery GameByIdQuery;
+		private IGetMatchesByUserAndGameQuery MatchesQuery;
+		private IGetMatchByIDQuery MatchByIdQuery;
 		
-		public RecordController(IRecordTasks recordTasks)
+		public RecordController(IRecordTasks recordTasks, IGetAllGamesQuery allGamesQuery, IGetGameByIDQuery gameByIdQuery, IGetMatchesByUserAndGameQuery matchesQuery,
+			IGetMatchByIDQuery matchByIdQuery)
 		{
 			this.RecordTasks = recordTasks;
+			this.AllGamesQuery = allGamesQuery;
+			this.GameByIdQuery = gameByIdQuery;
+			this.MatchesQuery = matchesQuery;
+			this.MatchByIdQuery = matchByIdQuery;
 		}
 
 		//
@@ -26,14 +35,14 @@ namespace YucataTracker.Web.Mvc.Controllers
 		[HttpGet, ImportModelStateFromTempData]
 		public ActionResult Index()
 		{
-			return View(RecordTasks.GetListOfAllGames());
+			return View(AllGamesQuery.ListAll());
 		}
 
 		[HttpPost, ExportModelStateToTempData]
 		[ValidateAntiForgeryToken]
 		public ActionResult Index(int GameID)
 		{
-			Game g = RecordTasks.GetGameById(GameID);
+			Game g = GameByIdQuery.GetGame(GameID);
 			if (g == null)
 			{
 				ModelState.AddModelError("", "Invalid GameID specified. Select from the drop-down.");
@@ -45,7 +54,7 @@ namespace YucataTracker.Web.Mvc.Controllers
 		[HttpGet, ImportModelStateFromTempData, ExportModelStateToTempData]
 		public ActionResult SelectPlayer(int GameId)
 		{
-			Game g = RecordTasks.GetGameById(GameId);
+			Game g = GameByIdQuery.GetGame(GameId);
 			if (g == null)
 			{
 				ModelState.AddModelError("", "Invalid GameID specified. Select from the drop-down.");
@@ -71,14 +80,14 @@ namespace YucataTracker.Web.Mvc.Controllers
 		[HttpGet, ImportModelStateFromTempData]
 		public ActionResult MatchOverview(string BggID, int GameID)
 		{
-			IList<Match> Matches = RecordTasks.GetMatchesByUserIDAndGameID(BggID, GameID);
+			IList<Match> Matches = MatchesQuery.GetMatchesByUserIDAndGameID(BggID, GameID);
 			if (Matches.Count == 0)
 			{
 				ModelState.AddModelError("BggID", "No matches found for that user for the selected game.");
 				return this.RedirectToAction(rc => rc.SelectPlayer(GameID));
 			}
 
-			return View(RecordTasks.PrepareNewMatchOverviewModel(BggID, GameID));
+			return View(new MatchOverviewViewModel(Matches, BggID));
 
 		}
 
@@ -113,12 +122,12 @@ namespace YucataTracker.Web.Mvc.Controllers
 		[HttpGet, ImportModelStateFromTempData]
 		public ActionResult MatchDetail(int MatchId, string BggID)
 		{
-			Match m = RecordTasks.GetMatchById(MatchId);
+			Match m = MatchByIdQuery.GetMatch(MatchId);
 			if (null == m) return new HttpNotFoundResult("No match found by ID");
 				//the only way you're getting here with a bogus ID is url hacking, so I'm not obliged to help you navigate back here
 
 
-			return View(RecordTasks.PrepareMatchDetailViewModel(m, BggID));
+			return View(new MatchDetailViewModel(m, BggID));
 
 		}
 

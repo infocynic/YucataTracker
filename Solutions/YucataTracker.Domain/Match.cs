@@ -49,10 +49,6 @@ namespace YucataTracker.Domain
 			//look for a MatchResult with this player.
 			MatchResult existing = _matchResults.FirstOrDefault(mr => mr.Player == p);
 			if (null != existing) return false; //already exists on this match
-
-			//too many players?
-			if (_players.Count == Game.NumberOfPlayers || _players.Contains(p)) return false;
-			
 			
 			_players.Add(p);
 			_matchResults.Add(new MatchResult(this, p));
@@ -149,5 +145,7 @@ namespace YucataTracker.Domain
 
 			return true;
 		}
+
+		
 	}
 }

@@ -24,16 +24,16 @@
         private static void AddTasksTo(IWindsorContainer container)
         {
             container.Register(
-                AllTypes
+                Types
                     .FromAssemblyNamed("YucataTracker.Tasks")
                     .Pick()
-                    .WithService.FirstNonGenericCoreInterface("YucataTracker.Domain"));
+                    .WithService.FirstNonGenericCoreInterface("YucataTracker.Tasks"));
         }
 
         private static void AddCustomRepositoriesTo(IWindsorContainer container) 
         {
             container.Register(
-                AllTypes
+                Types
                     .FromAssemblyNamed("YucataTracker.Infrastructure")
                     .BasedOn(typeof(IRepositoryWithTypedId<,>))
                     .WithService.FirstNonGenericCoreInterface("YucataTracker.Domain"));
@@ -72,12 +72,12 @@
         private static void AddQueryObjectsTo(IWindsorContainer container) 
         {
             container.Register(
-                AllTypes.FromAssemblyNamed("YucataTracker.Web.Mvc")
+                Types.FromAssemblyNamed("YucataTracker.Web.Mvc")
                     .BasedOn<NHibernateQuery>()
                     .WithService.DefaultInterfaces());
 
             container.Register(
-                AllTypes.FromAssemblyNamed("YucataTracker.Infrastructure")
+                Types.FromAssemblyNamed("YucataTracker.Infrastructure")
                     .BasedOn(typeof(NHibernateQuery))
                     .WithService.DefaultInterfaces());
         }
@@ -85,12 +85,12 @@
         private static void AddHandlersTo(IWindsorContainer container)
         {
             container.Register(
-                AllTypes.FromAssemblyNamed("YucataTracker.Tasks")
+                Types.FromAssemblyNamed("YucataTracker.Tasks")
                     .BasedOn(typeof(ICommandHandler<>))
                     .WithService.FirstInterface());
 
             container.Register(
-                AllTypes.FromAssemblyNamed("YucataTracker.Tasks")
+                Types.FromAssemblyNamed("YucataTracker.Tasks")
                     .BasedOn(typeof(IHandles<>))
                     .WithService.FirstInterface());
         }

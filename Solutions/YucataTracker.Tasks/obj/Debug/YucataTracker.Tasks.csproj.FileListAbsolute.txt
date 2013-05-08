@@ -13,7 +13,6 @@ C:\code\YucataTracker\Solutions\YucataTracker.Tasks\bin\Debug\YucataTracker.Doma
 C:\code\YucataTracker\Solutions\YucataTracker.Tasks\bin\Debug\YucataTracker.Infrastructure.pdb
 C:\code\YucataTracker\Solutions\YucataTracker.Tasks\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\code\YucataTracker\Solutions\YucataTracker.Tasks\bin\Debug\Microsoft.Practices.ServiceLocation.xml
-C:\code\YucataTracker\Solutions\YucataTracker.Tasks\bin\Debug\Newtonsoft.Json.pdb
 C:\code\YucataTracker\Solutions\YucataTracker.Tasks\bin\Debug\Newtonsoft.Json.xml
 C:\code\YucataTracker\Solutions\YucataTracker.Tasks\bin\Debug\SharpArch.Domain.pdb
 C:\code\YucataTracker\Solutions\YucataTracker.Tasks\bin\Debug\FluentNHibernate.xml
@@ -39,3 +38,4 @@ C:\code\YucataTracker\Solutions\YucataTracker.Tasks\bin\Debug\System.Web.Razor.x
 C:\code\YucataTracker\Solutions\YucataTracker.Tasks\bin\Debug\System.Web.WebPages.xml
 C:\code\YucataTracker\Solutions\YucataTracker.Tasks\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\code\YucataTracker\Solutions\YucataTracker.Tasks\bin\Debug\System.Web.WebPages.Razor.xml
+C:\code\YucataTracker\Solutions\YucataTracker.Tasks\bin\Debug\YucataTracker.Tasks.dll.config

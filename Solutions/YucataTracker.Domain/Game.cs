@@ -21,9 +21,6 @@ using SharpArch.Domain.DomainModel;
 		[Required]
 		public virtual string BggUrl { get; set; }
 
-		[Required, Range(2, 5)]
-		public virtual int NumberOfPlayers { get; set; }
-
 		[Required]
 		public virtual string PrimaryScoreLabel { get; set; }
 

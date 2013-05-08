@@ -30,7 +30,6 @@ C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\Iesi.Collections.xml
 C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\log4net.xml
 C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\Microsoft.Practices.ServiceLocation.pdb
 C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\Microsoft.Practices.ServiceLocation.xml
-C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\Newtonsoft.Json.pdb
 C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\Newtonsoft.Json.xml
 C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\NHibernate.xml
 C:\code\YucataTracker\Solutions\YucataTracker.Web.Mvc\bin\SharpArch.Domain.pdb
